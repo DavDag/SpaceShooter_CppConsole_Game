@@ -10,4 +10,4 @@ Please try it and feel free to send me messages.
 
 Power up for *Damage, FireRate, Granade, Shield, Life and Heal*.
 Up to *10 Level*.
-(Reduce Sleep time if it's too hard).
+(Increase Sleep time if it's too hard).
