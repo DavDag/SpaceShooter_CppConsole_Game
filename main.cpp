@@ -271,11 +271,11 @@ class SpaceShooterGame : public Game
 			
 			if (frame % PLAYER_SPEED == 0)
 			{
-				if (isKeyDown(KEY_A))		{ if (p.x > 1)					--p.x; }
-				else if (isKeyDown(KEY_D))	{ if (p.x < SCREEN_WIDTH - 2)	++p.x; }
+				if (IsKeyDown(KEY_A))		{ if (p.x > 1)					--p.x; }
+				else if (IsKeyDown(KEY_D))	{ if (p.x < SCREEN_WIDTH - 2)	++p.x; }
 			}
-			if (o.isPlayerAlwaysShooting | isKeyDown(KEY_BACKSPACE))	playerShoot();
-			if (isKeyDown(KEY_G))										playerThrowGranade();
+			if (o.isPlayerAlwaysShooting | IsKeyDown(KEY_BACKSPACE))	playerShoot();
+			if (IsKeyDown(KEY_G))										playerThrowGranade();
 
 			// Shoots movement & collision
 			for (auto& s : shoots)
@@ -439,7 +439,7 @@ class SpaceShooterGame : public Game
 					drawMenuAnimations();
 					drawWelcome();
 					DrawBuffer();
-					if (isKeyDown(KEY_ENTER)) menu = false;
+					if (IsKeyDown(KEY_ENTER)) menu = false;
 					Sleep(10);
 					++frame;
 				}
